@@ -1,0 +1,56 @@
+.face{
+    text-align: center;
+    background-image: linear-gradient(rgba(36, 43, 51, 1), rgba(45, 52, 60, 0.38), rgba(36, 43, 51, 1)), url(../images/face-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__h1{
+        font-family: var(--font-family-accent);
+        margin: 0 auto;
+        max-width: 600px;
+        width: 100%;
+        padding-top: 200px;
+        color: var(--color-accent);
+        white-space: nowrap;
+        text-align: center;
+
+        @include mobile-above{
+            white-space: wrap;
+            padding-top: 100px;
+            max-width: 500px;
+        }
+
+        @include mobile-above{
+            font-size: 32px;
+        }
+    }
+
+    &__img{
+        padding-top: 100px;
+        margin-bottom: 200px;
+
+        @include mobile-above{
+            padding-top: 50px;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        justify-content: center;
+        column-gap: 100px;
+
+        @include mobile-s-above{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        &-adress, &-phone{
+            display: flex;
+            gap: 15px;
+        }
+    }
+}

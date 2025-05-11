@@ -1,0 +1,47 @@
+body{
+    @include fluid-text-ifOnlyDesktop(16);
+
+    margin: 0 auto;
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    // line-height: 1.7;
+    color: var(--color-light);
+    background-color: var(--color-bg);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4{
+    font-weight: 700;
+}
+
+h1{
+    @include fluid-text-ifOnlyDesktop(48);
+    letter-spacing: 0.1em;
+}
+h2{
+    @include fluid-text-ifOnlyDesktop(36);
+}
+h3{
+    @include fluid-text-ifOnlyDesktop(20);
+}
+h4{
+    @include fluid-text-ifOnlyDesktop(16);
+}

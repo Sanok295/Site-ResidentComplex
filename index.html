@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Complex</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container header__inner">
+            <a href="#" class="header__logo logo">
+                <img src="./images/logo.svg" alt="Resident-Complex-logo" class="logo__image" width="134" height="37" loading="lazy">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">О комплексе</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Район</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Каталог квартир</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Ипотека</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href" class="header__menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger-button-menu burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="face big-container" id="face">
+            <h1 class="face__h1">Жилой комплекс<br>в историческом центре</h1>
+            <a href="#" class="face__img">
+                <img src="./images/icon-mouse.svg" alt="mause-img" class="face__image-mause" width="40" height="40" loading="lazy">
+            </a>
+            <div class="face__contacts">
+                <div class="face__contacts-adress">
+                    <img src="./images/icon-face-adress.svg" alt="face__adress-img" class="face__adress-img" width="15" height="21" loading="lazy">
+                    <span class="addres-text">Наб. реки Фонтанки 10-15</span>
+                </div>
+                <div class="face__contacts-phone">
+                    <img src="./images/icon-face-phone.svg" alt="face__phone-img" class="face__phone-img" width="21" height="21" loading="lazy">
+                    <a href="tel:+78121234567" class="phone-number">8 (812) 123-45-67</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+:root{
+    --color-light: rgba(255, 255, 255, 1);
+    --color-gray: rgba(190, 190, 190, 1);
+    --color-star-gray: rgba(231, 231, 231, 1);
+    --color-accent: rgba(212, 193, 127, 1);
+    --color-bg: rgba(36, 43, 51, 1);
+
+    --border: 1px solid transparent;
+
+    --font-family-base: 'Raleway', sans-serif;
+    --font-family-accent: 'Playfair Display', sans-serif;
+
+    --container-width: 1080px;
+    --big-container-width: 1900px;   
+    --container-padding-x: 10px;
+
+    --section-padding-y: 180px;
+
+    --button-height: 50px;
+
+    --transition-duration: 0.2s;
+}
