@@ -1,0 +1,43 @@
+.mobile-overlay{
+    width: 250px;
+    height: 340px;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: var(--color-gray);
+    background-color: var(--color-bg);
+    align-self: center;
+    opacity: 0.9;
+
+    &__list{
+        @include flex-center;
+        flex-direction: column;
+        justify-content: end;
+        row-gap: 20px;
+        text-align: center;
+        min-height: 35vh;
+    }
+
+    &:modal{ 
+        opacity: 0.9;
+        max-width: 70%;
+        max-height: 100%;
+    }
+
+    &__close-button-wrapper{
+        display: flex;
+        justify-content: end;
+        
+    }
+
+    &__link{
+
+        @include hover{
+            color: var(--color-accent);
+            transform: scale(1.02);
+        }
+
+    }
+}

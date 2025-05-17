@@ -485,4 +485,88 @@ h4 {
 .burger-button:hover::after {
   background-color: var(--color-bg);
   box-shadow: 0 -8px var(--color-bg), 0 8px var(--color-bg);
+}
+
+.mobile-overlay {
+  width: 250px;
+  height: 340px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: var(--color-gray);
+  background-color: var(--color-bg);
+  align-self: center;
+  opacity: 0.9;
+}
+.mobile-overlay__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+  row-gap: 20px;
+  text-align: center;
+  min-height: 35vh;
+}
+.mobile-overlay:modal {
+  opacity: 0.9;
+  max-width: 70%;
+  max-height: 100%;
+}
+.mobile-overlay__close-button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+@media (hover: hover) {
+  .mobile-overlay__link:hover {
+    color: var(--color-accent);
+    transform: scale(1.02);
+  }
+}
+@media (hover: none) {
+  .mobile-overlay__link:active {
+    color: var(--color-accent);
+    transform: scale(1.02);
+  }
+}
+
+.cross-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  aspect-ratio: 1;
+  position: relative;
+  border-radius: 7px;
+}
+@media (hover: hover) {
+  .cross-button:hover {
+    background-color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .cross-button:active {
+    background-color: var(--color-accent);
+  }
+}
+.cross-button::after, .cross-button::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-gray);
+  width: 60%;
+  height: 2px;
+  top: 19px;
+  left: 8px;
+  border-radius: 5px;
+}
+.cross-button:hover::after, .cross-button:hover::before {
+  background-color: var(--color-bg);
+}
+.cross-button::before {
+  rotate: 45deg;
+}
+.cross-button::after {
+  rotate: -45deg;
 }/*# sourceMappingURL=style.css.map */
