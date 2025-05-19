@@ -1,0 +1,66 @@
+.benefits{
+    position: relative;
+    padding-block: var(--section-padding-y);
+
+    @include tablet-above{
+        padding-block: var(--section-padding-tablet-y); 
+    }
+    @include mobile-above{
+        padding-block: var(--section-padding-mobile-y);
+    }
+
+    &__flex{
+        @include fluid-text-ifOnlyDesktop(20);
+
+        display: flex;
+        justify-content: center;
+        column-gap: 80px;
+        padding-left: 100px;
+
+        @include tablet-above{
+            padding-left: 0;
+            column-gap: 40px;
+        }
+
+        @include mobile-above{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            row-gap: 20px;
+        }
+
+        &-item{
+            @include flex-center(true);
+
+            align-items: end;
+            position: relative;
+            max-width: 200px;
+            height: 180px;
+            text-align: center;
+
+            @include tablet-above{
+                height: 140px;
+            }
+            @include mobile-above{
+                height: 130px;
+            }
+
+            &__bg{
+                @include square(80px);
+
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: 0;
+                position: absolute;
+
+                @include tablet-above{
+                    @include square(60px);
+                }
+            }
+
+            &__span{
+                white-space: nowrap;
+            }
+        }
+    }
+}

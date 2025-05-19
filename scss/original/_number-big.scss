@@ -1,0 +1,16 @@
+.number-big{
+    font-size: 400px;
+    color: rgb(55, 54, 62);
+    line-height: 80%;
+    position: absolute;
+    top: 25%;
+    right: 12%;
+    z-index: -1;
+
+    @include tablet-above{
+        font-size: 250px;
+    }
+    @include mobile-above{
+        font-size: 200px;
+    }
+}
