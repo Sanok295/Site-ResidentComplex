@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-block: var(--section-padding-y);
 
     &__h1{
         font-family: var(--font-family-accent);

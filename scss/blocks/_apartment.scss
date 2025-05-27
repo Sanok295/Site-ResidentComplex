@@ -1,0 +1,67 @@
+.apartments{
+    padding-block: var(--section-padding-y);
+    position: relative;
+
+    &__h2{
+        color: var(--color-accent);
+        margin-bottom: 100px;
+
+        @include fulldesktop{
+            margin-bottom: 70px;
+        }
+        @include desktop-above{
+            margin-bottom: 40px;
+        }
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @include mobile-above{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &-item{
+            position: relative;
+            max-width: 535px;
+            max-height: 320px;
+            width: 100%;
+            aspect-ratio: 535/320;
+            margin: 0 auto;
+
+            &__bg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &__span{
+                position: absolute;
+                left: 30px;
+                bottom: 30px;
+                font-size: 24px;
+
+                @include mobile-above{
+                    font-size: 20px;
+                }
+                @include mobile-s-above{
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+
+    &__number-big{
+       top: 0;
+       left: 10%; 
+    }
+}

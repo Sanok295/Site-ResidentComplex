@@ -15,10 +15,8 @@
         display: flex;
         justify-content: center;
         column-gap: 80px;
-        padding-left: 100px;
 
         @include tablet-above{
-            padding-left: 0;
             column-gap: 40px;
         }
 
@@ -26,7 +24,8 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
-            row-gap: 20px;
+            gap: 20px;
+            padding-inline: 10%;
         }
 
         &-item{
@@ -50,11 +49,12 @@
 
                 background-size: cover;
                 background-repeat: no-repeat;
-                top: 0;
+                top: 15%;
                 position: absolute;
 
                 @include tablet-above{
                     @include square(60px);
+                    top: 5%;
                 }
             }
 

@@ -1,14 +1,15 @@
 .number-big{
-    font-size: 400px;
-    color: rgb(55, 54, 62);
-    line-height: 80%;
+    font-family: 'Playfair Display';
+    font-size: 380px;
+    color: rgba(58, 57, 67, 0.381);
     position: absolute;
-    top: 25%;
+    top: -35%;
     right: 12%;
-    z-index: -1;
+    z-index: -5;
 
     @include tablet-above{
         font-size: 250px;
+        top: -10%;
     }
     @include mobile-above{
         font-size: 200px;
