@@ -1,0 +1,23 @@
+.field{
+    
+    &__input{
+        width: 255px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.3);
+        opacity: 0.7;
+        border: none;
+        padding: 20px;
+        color: var(--color-light);
+        
+        &::placeholder{
+            color: var(--color-gray);
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        &:focus{
+            outline: 2px solid transparent;
+            box-shadow: 0 0 0 2px var(--color-accent);
+        }
+    }
+}

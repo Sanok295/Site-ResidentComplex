@@ -33,7 +33,9 @@ a{
 }
 
 h1, h2, h3, h4{
+    font-family: var(--font-family-accent);
     font-weight: 700;
+    color: var(--color-accent);
 }
 
 h1{

@@ -1,7 +1,6 @@
 .mobile-overlay{
     width: 250px;
     height: 340px;
-    margin: 0 auto;
     border: 0;
     border-radius: 5px;
     text-transform: uppercase;
@@ -13,6 +12,7 @@
 
     &__list{
         @include flex-center;
+        padding-top: 40px;
         flex-direction: column;
         justify-content: end;
         row-gap: 20px;
