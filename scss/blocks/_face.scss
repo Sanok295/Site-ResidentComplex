@@ -4,7 +4,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-block: var(--section-padding-y);
+    
+    @include padding;
 
     &__h1{
         margin: 0 auto;

@@ -1,0 +1,41 @@
+.map{
+    position: relative;
+
+    @include padding;
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        @include desktop-above{
+            align-items: center;
+        }
+
+        &-h2{
+            margin-bottom: 100px;
+        }
+
+        &-place{
+            margin: 0 auto;
+            background-color: #827b7b75; //До появления карты
+
+            @include desktop-above {
+                width: 80%;
+            }
+
+            @include mobile-above {
+                height: 240px;
+            }
+            
+            @include mobile-s-above {
+                height: 160px;
+            }
+        }
+    }
+
+    &__number-big{
+        left: 10%;
+        top: 10%;
+    }
+}

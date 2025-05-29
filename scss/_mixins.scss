@@ -52,3 +52,14 @@
     width: $size;
     aspect-ratio: 1;
 }
+
+@mixin padding{
+    padding-block: var(--section-padding-y);
+
+    @include tablet-above{
+        padding-block: var(--section-padding-tablet-y); 
+    }
+    @include mobile-above{
+        padding-block: var(--section-padding-mobile-y);
+    }
+}

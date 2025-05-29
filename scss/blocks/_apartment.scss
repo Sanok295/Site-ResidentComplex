@@ -1,6 +1,7 @@
 .apartments{
-    padding-block: var(--section-padding-y);
     position: relative;
+
+    @include padding;
 
     &__h2{
         margin-bottom: 100px;
@@ -40,6 +41,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
+                transition: var(--transition-duration);
             }
 
             &__span{

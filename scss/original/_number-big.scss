@@ -1,10 +1,10 @@
 .number-big{
     font-family: 'Playfair Display';
-    font-size: 380px;
+    font-size: 340px;
     color: rgba(58, 57, 67, 0.381);
     position: absolute;
     top: -35%;
-    right: 12%;
+    right: 10%;
     z-index: -5;
 
     @include tablet-above{

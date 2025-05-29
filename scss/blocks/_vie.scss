@@ -1,6 +1,7 @@
 .vie{
     background-image: linear-gradient(rgba(36, 43, 51, 1), rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 1)), url(/images/form-bg.jpg); 
-    padding-block: var(--section-padding-y);
+
+    @include padding;
 
     &__normal-container{
         display: flex;

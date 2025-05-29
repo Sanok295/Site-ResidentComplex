@@ -1,13 +1,7 @@
 .benefits{
     position: relative;
-    padding-block: var(--section-padding-y);
 
-    @include tablet-above{
-        padding-block: var(--section-padding-tablet-y); 
-    }
-    @include mobile-above{
-        padding-block: var(--section-padding-mobile-y);
-    }
+    @include padding;
 
     &__flex{
         @include fluid-text-ifOnlyDesktop(20);
