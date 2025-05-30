@@ -19,14 +19,6 @@
             text-align: center;
         }
 
-        &-h2{
-            margin-bottom: 50px;
-
-            @include mobile-above{
-                margin-bottom: 20px;
-            }
-        }
-
         &-p{
             width: 470px;
             // width: 100%;

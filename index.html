@@ -10,7 +10,7 @@
     <header id="header" class="header">
         <div class="container header__inner">
             <a href="#" class="header__logo logo">
-                <img src="./images/logo.svg" alt="Resident-Complex-logo" class="logo__image" width="134" height="37" loading="lazy">
+                <img src="./images/logo.svg" alt="Resident-Complex-logo" class="logo__image" width="134" height="66" loading="lazy">
             </a>
             <nav class="header__menu hidden-mobile">
                 <ul class="header__menu-list">
@@ -101,7 +101,7 @@
             </div>
             <span class="apartments__number-big number-big">III</span>
         </section>
-        <section class="vie container big-container">
+        <section class="vie container big-container" id="vie">
             <div class=" vie__normal-container container">
                 <div class="vie__discription">
                     <h2 class="vie__discription-h2">Хотите посмотреть?</h2>
@@ -133,17 +133,111 @@
             </div>
              <span class="video__number-big number-big">IV</span>
         </section>
-        <section class="map big-container">
+        <section class="map big-container" id="map">
             <div class="map__inner container">
                 <h2 class="map__inner-h2">Район на карте</h2>
                 <iframe class="map__inner-place" src="" frameborder="0" width="1110px" height="358px"></iframe>
             </div>
             <span class="map__number-big number-big">V</span>
         </section>
+        <section class="questions container" id="questions">
+            <h2 class="questions-h2">Есть вопросы?</h2>
+            <div class="questions-inner">
+                <form class="questions-form">
+                    <div class="questions-form-body">
+                        <div class="questions-form-body__field field">
+                            <label for="name" class="field__label visually-hidden">Имя</label>
+                            <input class="field__input" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="questions-form-body__field field">
+                            <label for="tel" class="field__label visually-hidden">Телефон</label>
+                            <input class="field__input" id="tel" name="tel" placeholder="Ваш телефон" type="tel" required>
+                        </div>
+                    </div>
+                    <span class="questions-form-span"><pre>*Мы никому не передаем ваши данные.
+И не сохраняем ваш номер в базу.</pre></span>
+                    <button class="questions-form-button button" type="submit">Посмотреть район</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="footer container" id="footer">
+        <a href="#" class="footer__logo logo">
+            <img src="./images/logo.svg" alt="Resident-Complex-logo" class="logo__image" width="134" height="66" loading="lazy">
+        </a>
+        <div class="footer__body">
+            <div class="footer__body-lists">
+                <ul class="footer__body-lists-list">
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">О комплексе</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">Район</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">Каталог квартир</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">Ипотека</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="footer__body-lists-list">
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">О комплексе</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">Район</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">Каталог квартир</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">Ипотека</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="#" class="footer__body-lists-item-link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="footer__body-lists-contacts">
+                    <li class="footer__body-lists-item">
+                        <address class="footer__body-lists-address">
+                            <p>Адрес: Наб. реки Фонтанки 10-15</p>
+                        </address>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="tel:+78121234567" class="footer__body-lists-item-tel">Телефон: 8 (812) 123-45-67</a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <p><time datetime="10h" class="footer__body-lists-item-time">Отдел продаж: 10:00 - 20:00</time></p>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <a href="mailto:vip@housevip.ru" class="footer__body-lists-item-email">E-mail: <span class="footer__body-lists-item-email-link">vip@housevip.ru</span></a>
+                    </li>
+                    <li class="footer__body-lists-item">
+                        <div class="footer__body-lists-item-social social">
+                            <ul class="social__items">
+                                <li class="social__items-item">
+                                    <a href="#" aria-label="Youtube" class="social__items-item-link"></a>
+                                </li>
+                                <li class="social__items-item">
+                                    <a href="#" aria-label="VK" class="social__items-item-link"></a>
+                                </li>
+                                <li class="social__items-item">
+                                    <a href="#" aria-label="Facebook" class="social__items-item-link"></a>
+                                </li>
+                                <li class="social__items-item">
+                                    <a href="#" aria-label="Instagramm" class="social__items-item-link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">

@@ -344,6 +344,15 @@ h1 {
 
 h2 {
   font-size: clamp(29px, 1.875vw, 36px);
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
 }
 
 h3 {
@@ -694,19 +703,6 @@ h4 {
     padding-block: var(--section-padding-mobile-y);
   }
 }
-.apartments__h2 {
-  margin-bottom: 100px;
-}
-@media (min-width: 1281px) {
-  .apartments__h2 {
-    margin-bottom: 70px;
-  }
-}
-@media (max-width: 1281px) {
-  .apartments__h2 {
-    margin-bottom: 40px;
-  }
-}
 .apartments__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -785,14 +781,6 @@ h4 {
   .vie__discription {
     align-self: center;
     text-align: center;
-  }
-}
-.vie__discription-h2 {
-  margin-bottom: 50px;
-}
-@media (max-width: 768px) {
-  .vie__discription-h2 {
-    margin-bottom: 20px;
   }
 }
 .vie__discription-p {
@@ -945,9 +933,6 @@ h4 {
     align-items: center;
   }
 }
-.map__inner-h2 {
-  margin-bottom: 100px;
-}
 .map__inner-place {
   margin: 0 auto;
   background-color: rgba(130, 123, 123, 0.4588235294);
@@ -970,4 +955,57 @@ h4 {
 .map__number-big {
   left: 10%;
   top: 10%;
+}
+
+.questions {
+  padding-block: var(--section-padding-y);
+}
+@media (max-width: 1024px) {
+  .questions {
+    padding-block: var(--section-padding-tablet-y);
+  }
+}
+@media (max-width: 768px) {
+  .questions {
+    padding-block: var(--section-padding-mobile-y);
+  }
+}
+.questions-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 1281px) {
+  .questions-form {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .questions-form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+.questions-form-body {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .questions-form-body {
+    flex-direction: column;
+  }
+}
+.questions-form-span {
+  order: -2;
+  width: 255px;
+  text-align: center;
+  font-size: 13px;
+  white-space: nowrap;
+  color: var(--color-star-gray);
+}
+@media (max-width: 1281px) {
+  .questions-form-span {
+    order: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -44,6 +44,11 @@ h1{
 }
 h2{
     @include fluid-text-ifOnlyDesktop(36);
+    margin-bottom: 50px;
+    @include mobile-above{
+        @include flex-center;
+        margin-bottom: 35px;
+    }
 }
 h3{
     @include fluid-text-ifOnlyDesktop(20);

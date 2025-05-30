@@ -1,0 +1,40 @@
+.questions{
+    @include padding;
+
+    &-form{
+        @include flex-center;
+        gap: 30px;
+
+        @include desktop-above{
+            flex-wrap: wrap;
+        }
+
+        @include mobile-above{
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        &-body{
+            display: flex;
+            gap: 30px;
+
+            @include mobile-above{
+                flex-direction: column;
+            };
+        }
+
+        &-span{
+            order: -2;
+            width: 255px;
+            text-align: center;
+            font-size: 13px;
+            white-space: nowrap;
+            color: var(--color-star-gray);
+
+            @include desktop-above{
+                order: 1;
+
+            };
+        }
+    }
+}

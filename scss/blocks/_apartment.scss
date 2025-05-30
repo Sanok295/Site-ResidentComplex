@@ -3,17 +3,6 @@
 
     @include padding;
 
-    &__h2{
-        margin-bottom: 100px;
-
-        @include fulldesktop{
-            margin-bottom: 70px;
-        }
-        @include desktop-above{
-            margin-bottom: 40px;
-        }
-    }
-
     &__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
