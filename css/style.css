@@ -1008,4 +1008,83 @@ h4 {
   .questions-form-span {
     order: 1;
   }
+}
+
+.footer {
+  padding-block: var(--section-padding-y);
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding-block: var(--section-padding-tablet-y);
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-block: var(--section-padding-mobile-y);
+  }
+}
+.footer__inner {
+  color: var(--color-light);
+  font-size: 14px;
+  display: flex;
+  -moz-column-gap: 165px;
+       column-gap: 165px;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer__inner-list, .footer__inner-contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.footer__inner-list-item-tel, .footer__inner-contacts-item-tel {
+  transition: var(--transition-duration);
+}
+@media (hover: hover) {
+  .footer__inner-list-item-tel:hover, .footer__inner-contacts-item-tel:hover {
+    color: var(--color-accent);
+    transform: scale(1.05);
+  }
+}
+@media (hover: none) {
+  .footer__inner-list-item-tel:active, .footer__inner-contacts-item-tel:active {
+    color: var(--color-accent);
+    transform: scale(1.05);
+  }
+}
+.footer__inner-list-item-email-link, .footer__inner-contacts-item-email-link {
+  color: var(--color-accent);
+  transition: var(--transition-duration);
+}
+@media (hover: hover) {
+  .footer__inner-list-item-email-link:hover, .footer__inner-contacts-item-email-link:hover {
+    padding-left: 5px;
+    transform: scale(1.05);
+    font-weight: bold;
+    text-decoration-line: underline;
+  }
+}
+@media (hover: none) {
+  .footer__inner-list-item-email-link:active, .footer__inner-contacts-item-email-link:active {
+    padding-left: 5px;
+    transform: scale(1.05);
+    font-weight: bold;
+    text-decoration-line: underline;
+  }
+}
+.footer__inner-list-item {
+  transition: var(--transition-duration);
+}
+@media (hover: hover) {
+  .footer__inner-list-item:hover {
+    color: var(--color-accent);
+    transform: scale(1.05);
+  }
+}
+@media (hover: none) {
+  .footer__inner-list-item:active {
+    color: var(--color-accent);
+    transform: scale(1.05);
+  }
 }/*# sourceMappingURL=style.css.map */
