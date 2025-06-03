@@ -1,15 +1,33 @@
 .footer{
     @include padding;
     
+    background-color: var(--color-bg-footer);
     margin: 0 auto;
+    padding-inline: 10px;
 
     &__inner{
         color: var(--color-light);
         font-size: 14px;
         display: flex;
-        column-gap: 165px;
         align-items: start;
         justify-content: space-between;
+
+        @include mobile-above{
+            gap: 50px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-lists{
+            display: flex;
+            column-gap: 10vw;
+
+            @include mobile-above{
+                column-gap: 20vw;
+                text-align: center;
+            }
+        }
 
         &-list, &-contacts{
             display: flex;

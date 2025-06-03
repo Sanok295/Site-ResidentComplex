@@ -1,0 +1,17 @@
+.social{
+
+    &__items{
+        display: flex;
+        column-gap: 20px;
+
+        &-item{
+            &-link{
+                transition: var(--transition-duration);
+                
+                @include hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

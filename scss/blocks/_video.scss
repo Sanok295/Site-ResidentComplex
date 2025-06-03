@@ -12,6 +12,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            transition: var(--transition-duration);
 
             @include tablet-above{
                 width: 80px;
@@ -21,6 +22,10 @@
             @include mobile-above{
                 width: 60px;
                 height: 60px;
+            }
+
+            @include hover{
+                cursor: pointer;
             }
         }
     }

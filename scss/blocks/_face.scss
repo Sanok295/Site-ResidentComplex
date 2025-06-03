@@ -51,6 +51,14 @@
         &-adress, &-phone{
             display: flex;
             gap: 15px;
+            transition: var(--transition-duration);
+        }
+
+        &-phone{
+            @include hover{
+                transform: scale(1.05);
+                color: var(--color-accent);
+            }
         }
     }
 }
