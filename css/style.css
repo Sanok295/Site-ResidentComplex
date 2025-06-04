@@ -747,6 +747,7 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   transition: var(--transition-duration);
+  background-image: linear-gradient(rgba(36, 43, 51, 0), rgb(36, 43, 51));
 }
 .apartments__grid-item__span {
   position: absolute;

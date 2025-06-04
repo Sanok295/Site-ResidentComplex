@@ -31,6 +31,7 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 transition: var(--transition-duration);
+                background-image: linear-gradient( rgba(36, 43, 51, 0), rgba(36, 43, 51, 1));
             }
 
             &__span{
