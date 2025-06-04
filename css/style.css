@@ -1135,6 +1135,11 @@ h4 {
     transform: scale(1.05);
   }
 }
+@media (max-width: 768px) {
+  .footer__inner-contacts {
+    text-align: center;
+  }
+}
 
 .social__items {
   display: flex;
@@ -1152,6 +1157,11 @@ h4 {
 @media (hover: none) {
   .social__items-item-link:active {
     transform: scale(1.1);
+  }
+}
+@media (max-width: 768px) {
+  .social__items {
+    justify-content: center;
   }
 }
 

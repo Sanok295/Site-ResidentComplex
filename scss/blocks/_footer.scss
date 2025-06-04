@@ -71,6 +71,12 @@
                 }
             }
         }
+
+        &-contacts{
+            @include mobile-above{
+                text-align: center;
+            }
+        }
     }
 
 }
