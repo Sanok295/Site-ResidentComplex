@@ -1,12 +1,12 @@
-const apartments = document.querySelectorAll('.apartments__grid-item');
+const apartments = document.querySelector('.apartments__grid');
 
-apartments.forEach(item =>{
-    item.addEventListener('click', function(){
-        const bg = this.querySelector('.apartments__grid-item__bg');
+apartments.addEventListener('click', (e) => {
+    const clickedItem = e.target.closest('.apartments__grid-item');
 
-        if (bg) {
-            item.classList.toggle('scaleAparts');
-            bg.classList.toggle('vieAparts');
-        }
-    })
+    if(clickedItem){
+        const bg = clickedItem.querySelector('div');
+        bg.classList.toggle('vieAparts');
+        clickedItem.classList.toggle('scaleAparts');
+        
+    }
 })
