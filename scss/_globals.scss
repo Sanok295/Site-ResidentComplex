@@ -1,6 +1,6 @@
 body{
     @include fluid-text-ifOnlyDesktop(16);
-
+    height: 100%;
     /*
     Настройка для конкретного проекта
     */
